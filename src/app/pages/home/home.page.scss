@@ -1,7 +1,19 @@
 ion-content {
-    --background: var(--ion-color-dark);
+    --background: var(--ion-background-color, #045aa3ff);
+    ion-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      
+        //background-color: rgb(14, 130, 231);
+        //border: solid 1px #ffffff;
+        //color: #e61d1d;
+      }
+
 }
 
 ion-list {
     padding: 0;
 }
+
