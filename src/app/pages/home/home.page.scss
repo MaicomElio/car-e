@@ -1,5 +1,7 @@
+
 ion-content {
     --background: var(--ion-background-color, #27557C);
+    
     ion-col {
         display: flex;
         align-items: center;
@@ -9,8 +11,7 @@ ion-content {
         //background-color: rgb(14, 130, 231);
         //border: solid 1px #ffffff;
         //color: #e61d1d;
-      }
-
+    }  
 }
 
 ion-list {
