@@ -1,7 +1,6 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color,#27557C));
+  --background: var(--ion-background-color,#19364e);
 }
-
 
 ion-menu.md ion-content {
   --padding-start: 8px;
@@ -11,11 +10,13 @@ ion-menu.md ion-content {
 }
 
 ion-menu.md ion-list {
-  padding: 20px 0;
-}
+  padding: 80px 0;
+  }
 
-ion-menu.md ion-note {
+ion-menu.md ion-note { //subtitulo do menu lateral
+  font-family:balsamiqitalic;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 
 ion-menu.md ion-list-header,
@@ -23,14 +24,17 @@ ion-menu.md ion-note {
   padding-left: 10px;
 }
 
-ion-menu.md ion-list#inbox-list {
-  border-bottom: 1px solid var(--ion-color-step-150, #97a106);
+ion-menu.md ion-list#inbox-list { //opcoes menu lateral
+  //border-bottom: 0px solid var(--ion-color-step-150, #eafa0b);
+  background: var(--ion-background-color,#19364e);
 }
 
-ion-menu.md ion-list#inbox-list ion-list-header {
+ion-menu.md ion-list#inbox-list ion-list-header { //titulo do menu lateral
+  font-family:balsamiqbold;
+  font-size:1.1em;
   font-size: 30px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
   min-height: 20px;
 }
 
@@ -48,23 +52,28 @@ ion-menu.md ion-item {
   --padding-start: 10px;
   --padding-end: 10px;
   border-radius: 4px;
+  
 }
 
 ion-menu.md ion-item.selected {
   --background: rgba(var(--ion-color-primary-rgb), 0.14);
+  
 }
 
 ion-menu.md ion-item.selected ion-icon {
   color: var(--ion-color-primary);
 }
 
-ion-menu.md ion-item ion-icon {
-  color: #616e7e;
+ion-menu.md ion-item ion-icon { //icones menu lateral
+  color: #ffffff;
+  background: var(--ion-background-color,#19364e);
 }
 
-ion-menu.md ion-item ion-label {
+ion-menu.md ion-item ion-label { //opcoes do menu lateral
   font-weight: 500;
-  
+  color: #ffffff;
+  font-family:balsamiq;
+  background: var(--ion-background-color,#19364e);
 }
 
 ion-menu.ios ion-content {
@@ -74,6 +83,8 @@ ion-menu.ios ion-content {
 
 ion-menu.ios ion-list {
   padding: 20px 0 0 0;
+   //border-bottom: 0px solid var(--ion-color-step-150, #eafa0b);
+   background: var(--ion-background-color,#19364e);
 }
 
 ion-menu.ios ion-note {

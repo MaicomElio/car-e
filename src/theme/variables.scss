@@ -234,3 +234,23 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+@font-face {   
+  font-family: 'balsamiq';    //This is what we are going to call
+  src: url('../assets/fonts/BalsamiqSans-Regular.ttf');
+}
+
+@font-face {   
+  font-family: 'balsamiqbold';    //This is what we are going to call
+  src: url('../assets/fonts/BalsamiqSans-Bold.ttf');
+}
+
+@font-face {   
+  font-family: 'balsamiqitalic';    //This is what we are going to call
+  src: url('../assets/fonts/BalsamiqSans-Italic.ttf');
+}
+
+@font-face {   
+  font-family: 'balsamiqbolditalic';    //This is what we are going to call
+  src: url('../assets/fonts/BalsamiqSans-BoldItalic.ttf');
+}
