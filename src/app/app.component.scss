@@ -1,5 +1,18 @@
-ion-menu ion-content {
-  --background: var(--ion-background-color,#19364e);
+//ion-menu ion-content {
+//  --background: var(--ion-background-color,#19364e);
+//}
+
+ion-menu {
+  --ion-background-color: var(--ion-color-primary);
+  --ion-text-color: var(--ion-color-primary-contrast);
+
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+  }
+
+  ion-list {/* optional, but it needs when you use gradient as a background color.*/
+    background: transparent;
+  }
 }
 
 ion-menu.md ion-content {
@@ -26,7 +39,7 @@ ion-menu.md ion-note {
 
 ion-menu.md ion-list#inbox-list { //opcoes menu lateral
   //border-bottom: 0px solid var(--ion-color-step-150, #eafa0b);
-  background: var(--ion-background-color,#19364e);
+  background: transparent;
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header { //titulo do menu lateral
@@ -62,18 +75,19 @@ ion-menu.md ion-item.selected {
 
 ion-menu.md ion-item.selected ion-icon {
   color: var(--ion-color-primary);
+  background: transparent;
 }
 
 ion-menu.md ion-item ion-icon { //icones menu lateral
   color: #ffffff;
-  background: var(--ion-background-color,#19364e);
+  background: transparent;
 }
 
 ion-menu.md ion-item ion-label { //opcoes do menu lateral
   font-weight: 500;
   color: #ffffff;
   font-family:balsamiq;
-  background: var(--ion-background-color,#19364e);
+  background: transparent;
 }
 
 ion-menu.ios ion-content {
@@ -84,7 +98,7 @@ ion-menu.ios ion-content {
 ion-menu.ios ion-list {
   padding: 20px 0 0 0;
    //border-bottom: 0px solid var(--ion-color-step-150, #eafa0b);
-   background: var(--ion-background-color,#19364e);
+   background: transparent;
 }
 
 ion-menu.ios ion-note {
