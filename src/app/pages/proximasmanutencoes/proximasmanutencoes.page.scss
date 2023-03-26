@@ -1,11 +1,9 @@
-
 ion-title {
     font-family:balsamiq;
 }
 
 ion-content {
     --background: var(--ion-background-color, #27557C);
-    font-family:balsamiq;
     
     ion-col {
         display: flex;
@@ -15,13 +13,9 @@ ion-content {
         margin-bottom: 0px;
         margin-top: 20px;
       
-        //background-color: rgb(14, 130, 231);
-        //border: solid 1px #ffffff;
-        //color: #e61d1d;
     }  
 }
 
 ion-list {
     padding: 0;
 }
-

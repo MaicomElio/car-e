@@ -1,11 +1,18 @@
+ion-title {
+    font-family:balsamiq;
+}
+
 ion-button[color="danger"]{
     text-transform: initial;
+    font-family:balsamiq;
 }
 
 ion-content {
-    --background: var(--ion-color-dark);
+    --background: var(--ion-background-color, #27557C);
+    font-family:balsamiq;
 }
 
 ion-button{
     margin: 10px;
+    font-family:balsamiq;
 }
