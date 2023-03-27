@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Home', url: '/home', icon: 'warning' },
-    { title: 'Meus Veículos', url: '/meusveiculos', icon: 'warning' },
-    { title: 'Histórico', url: '/historico', icon: 'warning' },
-    { title: 'Próximas Manutenções', url: '/proximasmanutencoes', icon: 'warning' },
-    { title: 'Notificações', url: '/notificacoes', icon: 'warning' },
-    { title: 'Dicas', url: '/dicas', icon: 'warning' },
-    { title: 'Configurações', url: '/config', icon: 'warning' },
-    { title: 'Sair', url: '/folder/Archived', icon: 'warning' },
+    { title: 'Home', url: '/home', icon: 'home' },
+    { title: 'Meus Veículos', url: '/meusveiculos', icon: 'car' },
+    { title: 'Histórico', url: '/historico', icon: 'albums' },
+    { title: 'Próximas Manutenções', url: '/proximasmanutencoes', icon: 'build' },
+    { title: 'Notificações', url: '/notificacoes', icon: 'notifications' },
+    { title: 'Dicas', url: '/dicas', icon: 'bulb' },
+    { title: 'Configurações', url: '/config', icon: 'settings' },
+    { title: 'Sair', url: '/folder/Archived', icon: 'exit' },
   ];
   
   constructor() {}
