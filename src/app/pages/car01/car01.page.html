@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+    <ion-menu-button>
+
+    </ion-menu-button> 
+    </ion-buttons>
+    <ion-title color="light">Meus Veículos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+
+    <ion-grid>
+      
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="7"><img src= "assets\images\car01.jpg"></ion-col>
+        <ion-col size="2"><img src= "assets\images\load.png"></ion-col>
+      </ion-row>
+    
+    </ion-grid>
+ 
+      <ion-list>
+
+        <ion-item>
+
+          <ion-label position="floating">PLACA</ion-label>
+          <ion-input type="text" [(ngModel)]= "car01placa" placeholder="ABC1234" clearInput="true" maxlength="7"></ion-input>
+          
+          <ion-label position="floating">MARCA</ion-label>
+          <ion-input type="text" [(ngModel)]= "car01marca" placeholder="CHEVROLET" clearInput="true" maxlength="15"></ion-input>
+
+          <ion-label position="floating">MODELO</ion-label>
+          <ion-input type="text" [(ngModel)]= "car01modelo" placeholder="CELTA" clearInput="true" maxlength="15"></ion-input>
+
+          <ion-label position="floating">ANO</ion-label>
+          <ion-input type="tel" [(ngModel)]= "car01ano" placeholder="2005" clearInput="true" maxlength="4"></ion-input>
+
+          <ion-label position="floating">KM ATUAL</ion-label>
+          <ion-input type="tel" [(ngModel)]= "car01km" placeholder="140000" clearInput="true" maxlength="6"></ion-input>
+        
+        </ion-item>
+        
+       <ion-button size="small" color="tertiary" (click)="setStorage()">Set storage data</ion-button>
+       <ion-button size="small" color="tertiary" (click)="getStorage()">Get storage data</ion-button>
+       <ion-button size="small" color="tertiary" (click)="updateStorage()">Update storage data</ion-button>
+       <ion-button size="small" color="tertiary" (click)="deleteFromStorage()">Delete storage data</ion-button>
+       <ion-button size="small" color="tertiary" (click)="clearStorage()">Clear storage data</ion-button>
+
+       <ion-item>
+
+          Placa : {{ car01.placa}}
+          Marca : {{ car01.marca}}
+          Modelo : {{ car01.modelo}}
+          Ano : {{ car01.ano}}
+          KM : {{ car01.km}}
+          
+       </ion-item>
+
+

@@ -48,6 +48,21 @@ const routes: Routes = [
     path: 'notificacoes',
     loadChildren: () => import('./pages/notificacoes/notificacoes.module').then( m => m.NotificacoesPageModule)
   },
+  {
+    path: 'car01',
+    loadChildren: () => import('./pages/car01/car01.module').then( m => m.Car01PageModule)
+  },
+  {
+    path: 'car01newrep',
+    loadChildren: () => import('./pages/car01newrep/car01newrep.module').then( m => m.Car01newrepPageModule)
+  },
+  {
+    path: 'car01replist',
+    loadChildren: () => import('./pages/car01replist/car01replist.module').then( m => m.Car01replistPageModule)
+  },
+
+
+
 
 
 

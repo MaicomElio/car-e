@@ -8,11 +8,19 @@ ion-button[color="danger"]{
 }
 
 ion-content {
-    --background: var(--ion-background-color, #27557C);
+    background-image: url('/assets/images/background02.png'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     font-family:balsamiq;
+    
 }
 
 ion-button{
     margin: 10px;
     font-family:balsamiq;
+}
+
+ion-content::part(background){
+    opacity: 0.0;
 }

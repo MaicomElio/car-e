@@ -3,7 +3,11 @@ ion-title {
 }
 
 ion-content {
-    --background: var(--ion-background-color, #27557C);
+    background-image: url('/assets/images/background02.png'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    font-family:balsamiq;
     
     ion-col {
         display: flex;
@@ -18,4 +22,8 @@ ion-content {
 
 ion-list {
     padding: 0;
+}
+
+ion-content::part(background){
+    opacity: 0.0;
 }

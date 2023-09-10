@@ -18,6 +18,21 @@
       </ion-row>
     
     </ion-grid>
-  
+
+    <ion-button size="small" color="tertiary" (click)="setStorage()">Set storage data</ion-button>
+    <ion-button size="small" color="tertiary" (click)="getStorage()">Get storage data</ion-button>
+    <ion-button size="small" color="tertiary" (click)="updateStorage()">Update storage data</ion-button>
+    <ion-button size="small" color="tertiary" (click)="deleteFromStorage()">Delete storage data</ion-button>
+    <ion-button size="small" color="tertiary" (click)="clearStorage()">Clear storage data</ion-button>
+    
+    <ion-item>
+
+      Placa : {{ car01.placa}}
+      Marca : {{ car01.marca}}
+      Modelo : {{ car01.modelo}}
+      Ano : {{ car01.ano}}
+      KM : {{ car01.km}}
+      
+   </ion-item>
 
 </ion-content>

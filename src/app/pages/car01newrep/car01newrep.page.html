@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+    <ion-menu-button>
+
+    </ion-menu-button> 
+    </ion-buttons>
+    <ion-title color="light">Meus Veículos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+
+    <ion-grid>
+      
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="7"><img src= "assets\images\car01.jpg"></ion-col>
+      </ion-row>
+    
+    </ion-grid>
+ 
+      <ion-list>
+
+        <ion-item>
+          <ion-select 
+          interface="popover" 
+          placeholder="Tipo de serviço">
+            <ion-select-option value="Troca de óleo do motor">Troca de óleo do motor</ion-select-option>
+            <ion-select-option value="Troca da bateria">Troca da bateria</ion-select-option>
+            <ion-select-option value="Troca das pastilhas do freio">Troca das pastilhas do freio</ion-select-option>
+          </ion-select>
+          
+        </ion-item>
+        
+        <ion-item>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime"></ion-datetime>
+  </ng-template>
+</ion-modal>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">CUSTO</ion-label>
+          <ion-input type="number" placeholder="100" maxlength="10"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Nome da Oficina</ion-label>
+          <ion-input type="text" placeholder="Oficina do Zé" maxlength="20"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Observações</ion-label>
+          <ion-input type="text" placeholder="Levou 30 minutos." maxlength="150"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    
+  <ion-card color="success">
+    <ion-card-content>
+      <ion-button color="light" fill="clear" size="full">Salvar</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="danger">
+    <ion-card-content>
+      <ion-button color="light" fill="clear" size="full">Cancelar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
