@@ -1,9 +1,9 @@
 export interface Repair {
 
-    placa: string;
-    marca: string;
-    modelo: string;
-    ano: string;
-    km: string;
+    tipo: string;
+    data: string;
+    custo: string;
+    shop: string;
+    obs: string;
 
 }

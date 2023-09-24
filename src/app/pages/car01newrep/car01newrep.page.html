@@ -20,11 +20,13 @@
     </ion-grid>
  
       <ion-list>
-
+        <ion-button id="BT_02" color="tertiary" size="small" position="center" disabled="true" (click)="getStorage()">Dados do serviço</ion-button>
+        
         <ion-item>
           <ion-select 
           interface="popover" 
-          placeholder="Tipo de serviço">
+          placeholder="Tipo de serviço"
+          [(ngModel)]="c01r01tipo" [(ngModel)]="c01r01.tipo">
             <ion-select-option value="Troca de óleo do motor">Troca de óleo do motor</ion-select-option>
             <ion-select-option value="Troca da bateria">Troca da bateria</ion-select-option>
             <ion-select-option value="Troca das pastilhas do freio">Troca das pastilhas do freio</ion-select-option>
@@ -37,39 +39,41 @@
 
 <ion-modal [keepContentsMounted]="true">
   <ng-template>
-    <ion-datetime id="datetime"></ion-datetime>
+    <ion-datetime [showDefaultButtons]="true" doneText="OK" cancelText="CANCELAR" [(ngModel)]="c01r01data" [(ngModel)]="c01r01.data" id="datetime"></ion-datetime>
   </ng-template>
 </ion-modal>
         </ion-item>
 
         <ion-item>
-          <ion-label position="floating">CUSTO</ion-label>
-          <ion-input type="number" placeholder="100" maxlength="10"></ion-input>
+          <ion-label position="floating">Custo</ion-label>
+          <ion-input [(ngModel)]="c01r01custo" [(ngModel)]="c01r01.custo" type="number" placeholder="100" maxlength="10"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label position="floating">Nome da Oficina</ion-label>
-          <ion-input type="text" placeholder="Oficina do Zé" maxlength="20"></ion-input>
+          <ion-input [(ngModel)]="c01r01shop" [(ngModel)]="c01r01.shop" type="text" placeholder="Oficina do Zé" maxlength="20"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label position="floating">Observações</ion-label>
-          <ion-input type="text" placeholder="Levou 30 minutos." maxlength="150"></ion-input>
+          <ion-input [(ngModel)]="c01r01obs" [(ngModel)]="c01r01.obs" type="text" placeholder="Levou 30 minutos." maxlength="150"></ion-input>
         </ion-item>
 
       </ion-list>
     
   <ion-card color="success">
     <ion-card-content>
-      <ion-button color="light" fill="clear" size="full">Salvar</ion-button>
+      <ion-button color="light" fill="clear" size="full" (click)="setStorage()">Salvar</ion-button>
     </ion-card-content>
   </ion-card>
   
   <ion-card color="danger">
     <ion-card-content>
-      <ion-button color="light" fill="clear" size="full">Cancelar</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/car01replist">Cancelar</ion-button>
     </ion-card-content>
   </ion-card>
 
 
 </ion-content>
+
+
