@@ -13,15 +13,12 @@
 
   <ion-grid>
 
-    <ion-row class="ion-justify-content-center">
-      <ion-col size="7"><img src="assets\images\car01.jpg"></ion-col>
-    </ion-row>
-
   </ion-grid>
-
+  <ion-button id="BT_03" color="tertiary" size="full" disabled="false" (click)="getStorage()">Lista de manutenções do {{car01.modelo}}</ion-button>
   <ion-card color="primary">
+    
     <ion-card-content>
-      <ion-button id="BT_03" color="tertiary" size="small" disabled="true" (click)="getStorage()"></ion-button>
+      
       <ion-button color="light" fill="clear" size="full" href="/car01newrep" >01 - {{c01r01.tipo}}</ion-button>
       <ion-button color="light" fill="clear" size="full" href="/meusveiculos">02 - </ion-button>
       <ion-button color="light" fill="clear" size="full" href="/meusveiculos">03 - </ion-button>

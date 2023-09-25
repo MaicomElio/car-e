@@ -1,39 +1,31 @@
 <ion-header>
   <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
-    <ion-menu-button>
+      <ion-menu-button>
 
-    </ion-menu-button> 
+      </ion-menu-button>
     </ion-buttons>
     <ion-title color="light">Histórico</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content> 
+<ion-content>
 
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><a href="/car01replist"><img src= "assets\images\car01.jpg"></a></ion-col>
-      </ion-row>
-    
-    </ion-grid>
- 
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><a href="/car02replist"><img src= "assets\images\meusveiculos.png"></a></ion-col>
-      </ion-row>
-    
-    </ion-grid>   
-    
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><a href="/car03replist"><img src= "assets\images\meusveiculos.png"></a></ion-col>
-      </ion-row>
-    
-    </ion-grid> 
+
+
+  <ion-card color="tertiary">
+    <ion-card-content>
+      <ion-button color="light" fill="clear" size="full" href="/car01replist"> 01. {{car01.modelo}} </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-button id="BT_05" color="tertiary" size="small" position="center" disabled="true"
+    (click)="getStorage()"></ion-button>
+
+
+
+
+
 
 </ion-content>
-

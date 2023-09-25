@@ -60,6 +60,11 @@ const routes: Routes = [
     path: 'car01replist',
     loadChildren: () => import('./pages/car01replist/car01replist.module').then( m => m.Car01replistPageModule)
   },
+  {
+    path: 'dica01',
+    loadChildren: () => import('./pages/dica01/dica01.module').then( m => m.Dica01PageModule)
+  },
+
 
 
 

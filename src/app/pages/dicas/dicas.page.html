@@ -1,38 +1,32 @@
 <ion-header>
   <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
-    <ion-menu-button>
+      <ion-menu-button>
 
-    </ion-menu-button> 
+      </ion-menu-button>
     </ion-buttons>
     <ion-title color="light">Dicas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content> 
+<ion-content>
 
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="5"><img src= "assets\images\dicas.png"></ion-col>
-      </ion-row>
-    
-    </ion-grid>
+    <ion-card color="primary">
 
-    <ion-button size="small" color="tertiary" (click)="setStorage()">Salvar</ion-button>
-    <ion-button size="small" color="tertiary" (click)="getStorage()">Visualizar</ion-button>
-    <ion-button size="small" color="tertiary" (click)="updateStorage()">Atualizar</ion-button>
-    <ion-button size="small" color="tertiary" (click)="deleteFromStorage()">Deletar</ion-button>
-    <ion-button size="small" color="tertiary" (click)="clearStorage()">Clear</ion-button>
-    
-    <ion-item>
+    <ion-card-content>
 
-      Placa : {{ car01.placa}}
-      Marca : {{ car01.marca}}
-      Modelo : {{ car01.modelo}}
-      Ano : {{ car01.ano}}
-      KM : {{ car01.km}}
-      
-   </ion-item>
+      <ion-button color="light" fill="clear" size="full" href="/dica01">Troca de óleo do motor</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de filtro de óleo</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de filtro de ar</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de filtro de combustível</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de fluido de transmissão</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de fluido de freio</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de fluido de arrefecimento</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Verificação e troca de correias</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Troca de velas de ignição</ion-button>
+      <ion-button color="light" fill="clear" size="full" href="/meusveiculos">Alinhamento e balanceamento de rodas</ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

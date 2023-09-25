@@ -10,9 +10,10 @@ import { format, parseISO } from 'date-fns';
 })
 export class Car01newrepPage implements OnInit, AfterViewInit {
 
-  c01r01: Repair = { tipo: '', data: '', custo: '', shop: '', obs: '' }
+  c01r01: Repair = { tipo: '', data: '', km: '', custo: '', shop: '', obs: '' }
   public c01r01tipo: string = "";
   public c01r01data: string = "";
+  public c01r01km: string = "";
   public c01r01custo: string = "";
   public c01r01shop: string = "";
   public c01r01obs: string = "";
@@ -38,6 +39,7 @@ export class Car01newrepPage implements OnInit, AfterViewInit {
     let c01r01: Repair = {
       tipo: this.c01r01tipo,
       data: this.c01r01data,
+      km: this.c01r01km,
       custo: this.c01r01custo,
       shop: this.c01r01shop,
       obs: this.c01r01obs,
@@ -52,7 +54,7 @@ export class Car01newrepPage implements OnInit, AfterViewInit {
         this.c01r01 = p;
       }
       else
-        this.c01r01 = { tipo: '', data: '', custo: '', shop: '', obs: '' };
+        this.c01r01 = { tipo: '', data: '', km: '', custo: '', shop: '', obs: '' };
     })
 
   }

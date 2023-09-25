@@ -10,14 +10,6 @@
 </ion-header>
 
 <ion-content> 
-
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><img src= "assets\images\car01.jpg"></ion-col>
-      </ion-row>
-    
-    </ion-grid>
  
       <ion-list>
         <ion-button id="BT_02" color="tertiary" size="small" position="center" disabled="true" (click)="getStorage()">Dados do serviço</ion-button>
@@ -28,8 +20,20 @@
           placeholder="Tipo de serviço"
           [(ngModel)]="c01r01tipo" [(ngModel)]="c01r01.tipo">
             <ion-select-option value="Troca de óleo do motor">Troca de óleo do motor</ion-select-option>
+            <ion-select-option value="Troca do filtro de óleo">Troca do filtro de óleo</ion-select-option>
+            <ion-select-option value="Troca do filtro de ar">Troca do filtro de ar</ion-select-option>
+            <ion-select-option value="Troca do filtro de combustível">Troca do filtro de combustível</ion-select-option>
+            <ion-select-option value="Troca de fluido de transmissão">Troca de fluido de transmissão</ion-select-option>
+            <ion-select-option value="Troca de fluido de freio">Troca de fluido de freio</ion-select-option>
+            <ion-select-option value="Troca de fluido de arrefecimento">Troca de fluido de arrefecimento</ion-select-option>
+            <ion-select-option value="Troca de correias">Troca de correias</ion-select-option>
+            <ion-select-option value="Troca de velas de ignição">Troca de velas de ignição</ion-select-option>
+            <ion-select-option value="Alinhamento e balanceamento de rodas">Alinhamento e balanceamento de rodas</ion-select-option>
+            <ion-select-option value="Troca dos amortecedores">Troca dos amortecedores</ion-select-option>
             <ion-select-option value="Troca da bateria">Troca da bateria</ion-select-option>
             <ion-select-option value="Troca das pastilhas do freio">Troca das pastilhas do freio</ion-select-option>
+            <ion-select-option value="Troca dos pneus">Troca dos pneus</ion-select-option>
+            <ion-select-option value="Troca de peça">Troca de peça</ion-select-option>
           </ion-select>
           
         </ion-item>
@@ -45,10 +49,15 @@
         </ion-item>
 
         <ion-item>
-          <ion-label position="floating">Custo</ion-label>
-          <ion-input [(ngModel)]="c01r01custo" [(ngModel)]="c01r01.custo" type="number" placeholder="100" maxlength="10"></ion-input>
+          <ion-label position="floating">Km</ion-label>
+          <ion-input [(ngModel)]="c01r01km" [(ngModel)]="c01r01.km" type="tel" placeholder="140000" maxlength="6"></ion-input>
         </ion-item>
 
+        <ion-item>
+          <ion-label position="floating">Custo</ion-label>
+          <ion-input [(ngModel)]="c01r01custo" [(ngModel)]="c01r01.custo" type="tel" placeholder="100" maxlength="6"></ion-input>
+        </ion-item>
+            
         <ion-item>
           <ion-label position="floating">Nome da Oficina</ion-label>
           <ion-input [(ngModel)]="c01r01shop" [(ngModel)]="c01r01.shop" type="text" placeholder="Oficina do Zé" maxlength="20"></ion-input>
@@ -56,7 +65,7 @@
 
         <ion-item>
           <ion-label position="floating">Observações</ion-label>
-          <ion-input [(ngModel)]="c01r01obs" [(ngModel)]="c01r01.obs" type="text" placeholder="Levou 30 minutos." maxlength="150"></ion-input>
+          <ion-input [(ngModel)]="c01r01obs" [(ngModel)]="c01r01.obs" type="text" placeholder="Levou 30 minutos." maxlength="100"></ion-input>
         </ion-item>
 
       </ion-list>

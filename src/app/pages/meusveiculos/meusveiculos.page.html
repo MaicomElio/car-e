@@ -11,31 +11,20 @@
 
 <ion-content> 
 
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><a href="/car01"><img src= "assets\images\meusveiculos.png"></a></ion-col>
-        <ion-col size="2"><img src= "assets\images\trash.png"></ion-col>
-      </ion-row>
-    
-    </ion-grid>
+   
  
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><a href="/car02"><img src= "assets\images\meusveiculos.png"></a></ion-col>
-        <ion-col size="2"><img src= "assets\images\trash.png"></ion-col>
-      </ion-row>
+    <ion-card color="tertiary">
+      <ion-card-content>
+        <ion-button color="light" fill="clear" size="full" href="/car01"> 01. {{car01.modelo}} </ion-button>
+      </ion-card-content>
+    </ion-card>
     
-    </ion-grid>   
+
+    <ion-button id="BT_04" color="tertiary" size="small" position="center" disabled="true" (click)="getStorage()"></ion-button>
+
+
+     
     
-    <ion-grid>
-      
-      <ion-row class="ion-justify-content-center">
-        <ion-col size="7"><a href="/car03"><img src= "assets\images\meusveiculos.png"></a></ion-col>
-        <ion-col size="2"><img src= "assets\images\trash.png"></ion-col>
-      </ion-row>
     
-    </ion-grid> 
 
 </ion-content>
