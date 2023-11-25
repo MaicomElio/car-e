@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+    <ion-menu-button>
+
+    </ion-menu-button> 
+    </ion-buttons>
+    <ion-title color="light">Meus Veículos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+ 
+      <ion-list>
+        <ion-button id="BT_20" color="tertiary" size="small" position="center" disabled="true" (click)="getStorage()">Dados do serviço</ion-button>
+        
+        <ion-item>
+          <ion-select 
+          interface="popover" 
+          placeholder="Tipo de serviço"
+          [(ngModel)]="c01r10tipo" [(ngModel)]="c01r10.tipo">
+            <ion-select-option value="Troca de óleo do motor">Troca de óleo do motor</ion-select-option>
+            <ion-select-option value="Troca do filtro de óleo">Troca do filtro de óleo</ion-select-option>
+            <ion-select-option value="Troca do filtro de ar">Troca do filtro de ar</ion-select-option>
+            <ion-select-option value="Troca do filtro de combustível">Troca do filtro de combustível</ion-select-option>
+            <ion-select-option value="Troca de fluido de transmissão">Troca de fluido de transmissão</ion-select-option>
+            <ion-select-option value="Troca de fluido de freio">Troca de fluido de freio</ion-select-option>
+            <ion-select-option value="Troca de fluido de arrefecimento">Troca de fluido de arrefecimento</ion-select-option>
+            <ion-select-option value="Troca de correias">Troca de correias</ion-select-option>
+            <ion-select-option value="Troca de velas de ignição">Troca de velas de ignição</ion-select-option>
+            <ion-select-option value="Alinhamento e balanceamento de rodas">Alinhamento e balanceamento de rodas</ion-select-option>
+            <ion-select-option value="Troca dos amortecedores">Troca dos amortecedores</ion-select-option>
+            <ion-select-option value="Troca da bateria">Troca da bateria</ion-select-option>
+            <ion-select-option value="Troca das pastilhas do freio">Troca das pastilhas do freio</ion-select-option>
+            <ion-select-option value="Troca dos pneus">Troca dos pneus</ion-select-option>
+            <ion-select-option value="Troca de peça">Troca de peça</ion-select-option>
+          </ion-select>
+          
+        </ion-item>
+        
+        <ion-item>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime [showDefaultButtons]="true" doneText="OK" cancelText="CANCELAR" [(ngModel)]="c01r10data" [(ngModel)]="c01r10.data" id="datetime"></ion-datetime>
+  </ng-template>
+</ion-modal>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Km</ion-label>
+          <ion-input [(ngModel)]="c01r10km" [(ngModel)]="c01r10.km" type="tel" placeholder="140000" maxlength="6"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Custo</ion-label>
+          <ion-input [(ngModel)]="c01r10custo" [(ngModel)]="c01r10.custo" type="tel" placeholder="100" maxlength="6"></ion-input>
+        </ion-item>
+            
+        <ion-item>
+          <ion-label position="floating">Nome da Oficina</ion-label>
+          <ion-input [(ngModel)]="c01r10shop" [(ngModel)]="c01r10.shop" type="text" placeholder="Oficina do Zé" maxlength="20"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Observações</ion-label>
+          <ion-input [(ngModel)]="c01r10obs" [(ngModel)]="c01r10.obs" type="text" placeholder="Levou 30 minutos." maxlength="100"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    
+  <ion-card color="success">
+    <ion-card-content>
+      <ion-button color="light" fill="clear" size="full" (click)="setStorage()">Salvar</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="danger">
+    <ion-card-content>
+      <ion-button color="light" fill="clear" size="full" href="/car01replist">Cancelar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
