@@ -1,0 +1,29 @@
+ion-title {
+    font-family:balsamiq;
+}
+
+ion-content {
+    background-image: url('/assets/images/background02.png'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    font-family:balsamiq;
+    
+    ion-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      
+    }  
+}
+
+ion-list {
+    padding: 0;
+}
+
+ion-content::part(background){
+    opacity: 0.0;
+}
